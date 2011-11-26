@@ -1,0 +1,25 @@
+CREATE DATABASE  `CucumberEditor` ;
+
+CREATE TABLE IF NOT EXISTS Key (
+    ID          INTEGER CONSTRAINT pk_keyword PRIMARY KEY,
+    Name        VARCHAR2(255) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS Language (
+    ID          INTEGER CONSTRAINT pk_keyword PRIMARY KEY AUTO_INCREMENT,
+    LanguageKey	VARCHAR(2) NOT NULL,
+	Language    VARCHAR2(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Keyword (
+    ID          INTEGER CONSTRAINT pk_keyword PRIMARY KEY AUTO_INCREMENT,
+    LanguageId  INTEGER CONSTRAINT fk_language REFERENCES Language(ID),
+    KeyId       INTEGER CONSTRAINT fk_key REFERENCES Key(ID),
+    Keyword     VARCHAR2(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Sentance (
+    ID          INTEGER CONSTRAINT pk_sentance PRIMARY KEY AUTO_INCREMENT,
+    KeywordID   INTEGER CONSTRAINT fk_keyword REFERENCES Keyword(ID),
+    Sentance    VARCHAR2 NOT NULL
+);

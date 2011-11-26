@@ -1,0 +1,2 @@
+serviceClass: com.cucumber.editor.client.serivces.LanguageService
+path: AD6B2298E099995E07EB7A9A7CC501F4.gwt.rpc

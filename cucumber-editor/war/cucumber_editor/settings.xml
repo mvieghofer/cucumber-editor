@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <setting key="database.path" value="cucumber_editor/CucumberEditor" />
+  <setting key="database.type" value="sqlite"/>
+</settings>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>editor.html</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>CucumberFileService</servlet-name>
+    <servlet-class>com.cucumber.editor.server.CucumberFileServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CucumberFileService</servlet-name>
+    <url-pattern>/cucumber_editor/CucumberFileService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>keywordServiceImpl</servlet-name>
+    <servlet-class>com.cucumber.editor.server.dao.KeywordServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>keywordServiceImpl</servlet-name>
+    <url-pattern>/cucumber_editor/KeywordService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>languageServiceImpl</servlet-name>
+    <servlet-class>com.cucumber.editor.server.dao.LanguageServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>languageServiceImpl</servlet-name>
+    <url-pattern>/cucumber_editor/LanguageService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>sentanceServiceImpl</servlet-name>
+    <servlet-class>com.cucumber.editor.server.dao.SentenceServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sentanceServiceImpl</servlet-name>
+    <url-pattern>/cucumber_editor/SentanceService</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,390 @@
+/** Add css rules here for your application. */
+/** Example rules used by the template application (remove for your app) */
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #777777;
+	margin: 40px 0px 70px;
+}
+
+.sendButton {
+	display: block;
+	font-size: 16pt;
+}
+
+.outerButtonPanel {
+	height: 50px;
+}
+
+.outerButtonPanel .gwt-Button {
+	float: right;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+	width: 400px;
+}
+
+.dialogVPanel {
+	margin: 5px;
+}
+
+.serverResponseLabelError {
+	color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+	margin: 15px 6px 6px;
+}
+
+.textbox {
+	width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#noJavascriptErrorContainer {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: white;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#logoContainer {
+	position: absolute;
+	top: 25px;
+	right: 9%;
+	height: 100px;
+}
+
+#logo {
+	height: 100%;
+	border: 0;
+}
+
+.errorMsg {
+	color: red;
+	border: 4px solid red;
+}
+
+.fixedElement {
+	display: inline;
+}
+
+.errorMsg,.featurePanel {
+	position: relative;
+	width: 80%;
+	left: 10%;
+	padding: 5px;
+}
+
+.featurePanel {
+	height: 100%;
+	background-color: #F0F8FF;
+	border: 4px solid #00BFFF;
+}
+
+.tagPanel {
+	margin-top: 35px;
+	width: 80%;
+	height: 50px;
+	position: relative;
+}
+
+.tag {
+	padding: 5px;
+	float: left;
+}
+
+.tag:HOVER {
+	background: #ddd;
+}
+
+.tag .gwt-Button {
+	margin: 5px;
+	background: #efefef;
+	color: #777;
+	text-align: center;
+	moz-border-radius: 5px;
+	border-radius: 25px;
+	height: 30px;
+	width: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 4px;
+	padding-bottom: 5px;
+}
+
+.fullWidthPanel {
+	width: 100%;
+	position: relative;
+}
+
+.nameTextBox {
+	width: 100%;
+}
+
+.nameTextBoxPanel {
+	position: absolute;
+	left: 60px;
+	top: 0;
+	right: 1%;
+}
+
+.nameTextBoxPanelCb {
+	position: absolute;
+	left: 125px;
+	top: 0;
+	right: 1%;
+}
+
+.backgroundNameTextBoxPanel {
+	position: absolute;
+	left: 75px;
+	top: 0;
+	right: 1%;
+}
+
+.outlineNameTextBoxPanel {
+	position: absolute;
+	left: 105px;
+	top: 0;
+	right: 1%;
+}
+
+.scenarioNameTextBox {
+	width: 100%;
+}
+
+.headlinePanel {
+	height: 33px;
+	margin-top: 10px;
+	/* 	float: left; */
+}
+
+.buttonPanel {
+	right: 0;
+	position: absolute;
+	top: 0;
+	height: 33px;
+}
+
+.fullWidthPanel .gwt-TextArea {
+	width: 99.1%;
+}
+
+.abstractScenario {
+	margin-top: 15px;
+	padding: 10px;
+}
+
+.abstractScenario:HOVER {
+	background: #E6E9FF;
+}
+
+.featureHeadline {
+	vertical-align: middle;
+}
+
+.sentence {
+	height: 33px;
+	margin-top: 5px;
+}
+
+.sentence .gwt-Label {
+	position: relative;
+	top: 7px;
+}
+
+.sentence .gwt-ListBox {
+	position: absolute;
+	top: 3px;
+}
+
+.sentenceTextBoxPanel {
+	position: absolute;
+	left: 45px;
+	top: 0;
+	right: 40px;
+}
+
+.sentenceTextBoxPanelCb {
+	position: absolute;
+	left: 75px;
+	top: 0;
+	right: 40px;
+}
+
+.sentenceTextBox {
+	width: 100%;
+}
+
+.sentenceButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.languagePanel {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.languagePanel .gwt-ListBox {
+	position: absolute;
+	top: 0;
+	left: 75px;
+}
+
+.languagePanel .gwt-Label {
+	position: absolute;
+	top: 3px;
+	left: 0;
+}
+
+.headlinePanel .gwt-Label {
+	position: absolute;
+	top: 6px;
+}
+
+.previewMainPanel {
+	background: rgba(82, 82, 82, 0.7);
+	width: 90%;
+	height: 80%;
+	position: absolute;
+	left: 5%;
+	top: 10%;
+	color: #000;
+}
+
+.previewMainPanel a {
+	position: absolute;
+	top: 0;
+	right: 5px;
+	color: #fff;
+}
+
+.previewMainPanel a:hover {
+	position: absolute;
+	top: 0;
+	right: 5px;
+	color: #fff;
+	text-decoration: underline;
+}
+
+.previewText {
+	color: #000;
+	background: #fff;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	right: 25px;
+	bottom: 25px;
+	padding: 5px;
+	overflow: auto;
+}
+
+.previewScenario {
+	padding-left: 5px;
+}
+
+.previewTag {
+	float: left;
+	padding-right: 5px;
+}
+
+.previewSentence {
+	padding-left: 10px;
+}
+
+.previewLabel {
+	padding-bottom: 5px;
+}
+
+.clearLeft {
+	clear: left;
+}
+
+.mainLoginPanel {
+	width: 30%;
+	position: absolute;
+	left: 35%;
+	top: 60px;
+}
+
+.loginPanel {
+	width: 100%;
+}
+
+.loginPanel .gwt-Label {
+	width: 150px;
+	float: left;
+	padding-top: 7px;
+}
+
+.loginPanelRow {
+	width: 100%;
+	position: relative;
+	height: 35px;
+}
+
+.loginPanelRow input {
+	width: 50%;
+	position: absolute;
+	right: 0;
+	height: 20px;
+}
+
+.loginErrorMsg {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin-bottom: 15px;
+	border: 2px solid red;
+	padding: 5px;
+	color: red;
+}
+
+.loginButton {
+  float: right;
+}
+
+.success {
+	color: #006400;
+	font-weight: bold;
+}
+
+.error {
+  color: #f00;
+}
+
+.variableSentencePart {
+	 float: left;
+}
+
+.fixedSentencePart {
+	float:left;
+}
+
+.addRow {
+	height: 33px;
+}
+
+.mouseOverTextBox {
+  background: rgba(245, 245, 245, 0.7);
+}
+
+.space {
+	width: 5px;
+	height: 5px;
+	float: right;
+}
+
+.clearRight {
+	clear: right;
+}
